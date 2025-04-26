@@ -1,13 +1,16 @@
 body {
   margin: 0 auto;
   padding-top: 5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lexend", sans-serif;
   max-width: 302px;
 }
 
-label {
+.label {
   color: #5f9341;
-  font-weight: 900;
+  font-weight: 400;
+  font-size: 3rem !important;
+  display: block;
+  padding-bottom: 1rem;
 }
 
 input {
@@ -15,8 +18,16 @@ input {
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #5f9341;
-  margin-bottom: 4px;
+  margin-bottom: 1rem;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+input:focus-within {
+  outline: 0;
+}
+input:hover,
+input:focus {
+  border-color: #000;
 }
 
 button {
@@ -24,9 +35,16 @@ button {
   color: white;
   padding: 10px 20px;
   border: 1px solid #5f9341;
-  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
 }
-
+button:hover {
+  background-color: #000;
+  border-color: #000;
+}
 #delete-btn {
   background: white;
   color: #5f9341;
@@ -44,4 +62,7 @@ li {
 
 a {
   color: #5f9341;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.5rem;
 }
