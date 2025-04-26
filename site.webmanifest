@@ -1,6 +1,6 @@
 {
-  "name": "Recipe App",
-  "short_name": "Recipe App",
+  "name": "LVWR",
+  "short_name": "LVWR",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -15,5 +15,5 @@
   ],
   "theme_color": "#000",
   "background_color": "#000",
-  "display": "minimal-ui"
+  "display": "fullscreen"
 }
