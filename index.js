@@ -41,9 +41,15 @@ onValue(referenceInDb, function (snapshot) {
 //     render(myLeads);
 //   });
 // });
-
+function formatUrl(input) {
+  let url = input.trim();
+  if (!url.startsWith("http://") && !url.startsWith("https://")) {
+    url = "https://" + url;
+  }
+  return url;
+}
 inputBtn.addEventListener("click", function () {
-  push(referenceInDb, inputEl.value);
+  push(referenceInDb, formatUrl(inputEl.value));
   inputEl.value = "";
 });
 deleteBtn.addEventListener("dblclick", function () {
@@ -54,8 +60,8 @@ function render(leads) {
   let listItems = "";
   for (let i = 0; i < leads.length; i++) {
     listItems += `<li>
-        <a href="https://${leads[i]}" target="_blank">
-        https://${leads[i]}
+        <a href="${leads[i]}" target="_blank">
+        ${leads[i]}
       </a>
       </li>`;
   }
