@@ -54,7 +54,7 @@ function render(leads) {
   let listItems = "";
   for (let i = 0; i < leads.length; i++) {
     listItems += `<li>
-        <a href='https://${leads[i]}' target='_blank'>
+        <a href="${leads[i]}" target="_blank">
         ${leads[i]}
       </a>
       </li>`;
