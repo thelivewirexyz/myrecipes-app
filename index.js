@@ -52,16 +52,17 @@ inputBtn.addEventListener("click", function () {
   push(referenceInDb, formatUrl(inputEl.value));
   inputEl.value = "";
 });
-deleteBtn.addEventListener("dblclick", function () {
-  remove(referenceInDb);
-  ulEl.innerHTML = "";
-});
+// deleteBtn.addEventListener("dblclick", function () {
+//   remove(referenceInDb);
+//   ulEl.innerHTML = "";
+// });
 function render(leads) {
   let listItems = "";
   for (let i = 0; i < leads.length; i++) {
-    listItems += `<li>
+    listItems += `<li class="urlList">
+    <span class="material-symbols-outlined">arrow_outward</span>
         <a href="${leads[i]}" target="_blank">
-        ${leads[i]}
+         ${leads[i]}
       </a>
       </li>`;
   }

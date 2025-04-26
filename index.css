@@ -57,12 +57,13 @@ ul {
 }
 
 li {
-  margin-top: 5px;
+  display: inline-flex;
+  color: #5f9341;
 }
 
 a {
   color: #5f9341;
   font-weight: 400;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-left: 5px;
 }
